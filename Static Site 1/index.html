@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A visual field guide to disc golf discs, flight numbers, terminology, and choosing the right disc.">
+  <title>Disc Atlas | A field guide to disc golf discs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Disc Atlas home"><span class="wordmark-mark">◎</span><span>DISC<br><b>ATLAS</b></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu <span>+</span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#anatomy">Anatomy</a>
+      <a href="#flight">Flight numbers</a>
+      <a href="#choose">Choose a disc</a>
+    </nav>
+    <a class="header-cta" href="#choose">Start exploring <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> The flight guide / 001</p>
+        <h1>Find the disc<br>that <em>flies</em> like you.</h1>
+        <p class="hero-intro">Disc golf is a conversation between angle, speed, and air. Learn the language of your discs, then let the fairway answer back.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#choose">Explore disc types <span>↓</span></a>
+          <a class="text-link" href="#flight">Decode flight numbers <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="A disc golf disc floating above a fairway">
+        <div class="sun-stamp">FIELD<br>NOTES<br><b>01</b></div>
+        <div class="hero-disc hero-disc-back"></div>
+        <div class="hero-disc hero-disc-front"><span>DISC<br>ATLAS</span><b>◎</b></div>
+        <div class="flight-trail"></div>
+        <div class="hero-photo-credit">Image: Unsplash / optimized for web</div>
+      </div>
+    </section>
+
+    <section class="intro-band" id="anatomy">
+      <div class="section-shell band-grid">
+        <div>
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> The short version</p>
+          <h2>Four families.<br><em>One flight.</em></h2>
+        </div>
+        <div class="band-copy">
+          <p>Every disc belongs to a job: get distance, find the fairway, hold a line, or finish in the basket. The rim shape changes how much speed and control it wants from your throw.</p>
+          <a class="light-link" href="#choose">Compare the families <span>↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="families section-shell" id="choose">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> Your starting point</p><h2>Pick your<br><em>flight family.</em></h2></div>
+        <p class="section-note">New to the sport? Start with a putter or midrange. They reward clean form before they reward raw power.</p>
+      </div>
+      <div class="filter-tabs" role="tablist" aria-label="Filter disc families">
+        <button class="filter-tab is-active" role="tab" aria-selected="true" data-filter="all">All discs</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="control">Most control</button>
+        <button class="filter-tab" role="tab" aria-selected="false" data-filter="distance">Most distance</button>
+      </div>
+      <div class="disc-grid">
+        <article class="disc-card" data-category="distance">
+          <div class="card-top"><span>01 / 04</span><span class="card-arrow">↗</span></div>
+          <div class="disc-art art-driver"><div class="disc-ring"></div><span>DRIVER</span></div>
+          <div class="card-body"><h3>Distance driver</h3><p>Long, sharp, and hungry for speed. The widest rim trades easy control for maximum potential.</p><div class="card-meta"><span>10–14 speed</span><span>Advanced</span></div></div>
+        </article>
+        <article class="disc-card" data-category="control">
+          <div class="card-top"><span>02 / 04</span><span class="card-arrow">↗</span></div>
+          <div class="disc-art art-fairway"><div class="disc-ring"></div><span>FAIRWAY</span></div>
+          <div class="card-body"><h3>Fairway driver</h3><p>The reliable middle ground: more glide than a midrange, less demand than a distance driver.</p><div class="card-meta"><span>6–9 speed</span><span>Beginner →</span></div></div>
+        </article>
+        <article class="disc-card" data-category="control">
+          <div class="card-top"><span>03 / 04</span><span class="card-arrow">↗</span></div>
+          <div class="disc-art art-midrange"><div class="disc-ring"></div><span>MIDRANGE</span></div>
+          <div class="card-body"><h3>Midrange</h3><p>Point, shoot, learn. A rounded profile keeps it straight and makes it the best teacher in the bag.</p><div class="card-meta"><span>4–6 speed</span><span>All levels</span></div></div>
+        </article>
+        <article class="disc-card" data-category="control">
+          <div class="card-top"><span>04 / 04</span><span class="card-arrow">↗</span></div>
+          <div class="disc-art art-putter"><div class="disc-ring"></div><span>PUTTER</span></div>
+          <div class="card-body"><h3>Putter</h3><p>Soft hands, straight lines. The deep rim and blunt edge make short shots predictable and calm.</p><div class="card-meta"><span>1–3 speed</span><span>First disc</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="flight-section" id="flight">
+      <div class="section-shell">
+        <div class="section-heading flight-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> Read the numbers</p><h2>The anatomy<br>of a <em>flight.</em></h2></div><p class="section-note">Flight numbers are a shorthand, not a promise. Your speed, release angle, and wind complete the equation.</p></div>
+        <div class="flight-layout">
+          <div class="flight-chart" aria-label="Diagram showing a disc flight path from release to fade">
+            <div class="chart-axis chart-axis-y"><span>HIGH</span><span>LOW</span></div><div class="chart-axis chart-axis-x"><span>RELEASE</span><span>FADE</span></div>
+            <div class="chart-gridlines"></div><div class="flight-path"></div><div class="flight-dot dot-one"></div><div class="flight-dot dot-two"></div><div class="flight-dot dot-three"></div><span class="chart-label label-glide">GLIDE</span><span class="chart-label label-turn">HIGH-SPEED TURN</span><span class="chart-label label-fade">LOW-SPEED FADE</span>
+          </div>
+          <div class="number-list">
+            <div class="number-row"><div class="number-badge">01</div><div><h3>Speed</h3><p>How fast the disc wants to fly. Higher speed needs more arm speed to reach its line.</p></div></div>
+            <div class="number-row"><div class="number-badge">02</div><div><h3>Glide</h3><p>How long it stays in the air. More glide means more carry, especially at lower power.</p></div></div>
+            <div class="number-row"><div class="number-badge">03</div><div><h3>Turn</h3><p>How much the disc moves right for a right-handed backhand throw at full speed.</p></div></div>
+            <div class="number-row"><div class="number-badge">04</div><div><h3>Fade</h3><p>How strongly it hooks left as it slows down. The final signature of the flight.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="glossary section-shell">
+      <div class="glossary-label"><p class="eyebrow"><span class="eyebrow-line"></span> Keep this close</p><h2>Small<br><em>dictionary.</em></h2></div>
+      <div class="glossary-grid"><dl><dt>Hyzer</dt><dd>Outside edge tilted down at release. The disc naturally fades toward that edge.</dd></dl><dl><dt>Anhyzer</dt><dd>Outside edge tilted up. Can shape a turnover line or help a disc hold right.</dd></dl><dl><dt>Overstable</dt><dd>Resists turning over and finishes with a dependable fade. Wind’s favorite.</dd></dl><dl><dt>Understable</dt><dd>Easier to turn at speed. A friendly choice for newer players and smooth rollers.</dd></dl></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="section-shell footer-inner"><a class="wordmark" href="#top"><span class="wordmark-mark">◎</span><span>DISC<br><b>ATLAS</b></span></a><p>Made for the next throw.<br><span>Field guide / 2026</span></p><a class="back-top" href="#top">Back to top <span>↑</span></a></div></footer>
+</body>
+</html>
