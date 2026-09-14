@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Follow a checked bag through an airport baggage handling system.">
+  <title>Bag / Route | A journey through the BHS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Bag Route home"><span class="brand-mark">▱</span><span>BAG<br><b>/ ROUTE</b></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu <span>+</span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#route">The route</a>
+      <a href="#systems">The system</a>
+      <a href="#handoff">Final handoff</a>
+    </nav>
+    <a class="header-cta" href="#route">Track the journey <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Inside the airport / BHS field notes</p>
+        <h1>One bag.<br><em>Many hands.</em></h1>
+        <p class="hero-intro">Before it appears beside you at baggage reclaim, your suitcase follows a carefully choreographed route of labels, scanners, belts, sorters, vehicles, and people.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#route">Follow the route <span>↓</span></a>
+          <a class="text-link" href="#systems">Open the system map <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of a suitcase travelling on a conveyor belt">
+        <div class="sun-stamp">BAGGAGE<br>FIELD NOTES<br><b>01</b></div>
+        <div class="belt belt-back"></div><div class="belt belt-front"></div>
+        <div class="scanner-ring"></div>
+        <div class="suitcase"><span class="handle"></span><span class="case-label">BHS<br>7A</span><span class="case-line"></span></div>
+        <div class="route-dot dot-one">01</div><div class="route-dot dot-two">02</div><div class="route-dot dot-three">03</div>
+        <p class="visual-caption">tagged / screened / sorted</p>
+      </div>
+    </section>
+
+    <section class="intro-band" id="route">
+      <div class="section-shell band-grid">
+        <div><p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> The short version</p><h2>From check-in<br><em>to carousel.</em></h2></div>
+        <div class="band-copy"><p>A baggage handling system, or BHS, is the airport’s behind-the-scenes logistics network. It identifies each bag, routes it to the right flight, and reunites it with the passenger at the other end.</p><a class="light-link" href="#systems">See the moving parts <span>↓</span></a></div>
+      </div>
+    </section>
+
+    <section class="route-section section-shell">
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> The passenger view</p><h2>Six handoffs<br><em>behind one trip.</em></h2></div><p class="section-note">The exact equipment and sequence vary by airport, but the journey usually follows the same logic: identify, inspect, direct, and deliver.</p></div>
+      <div class="route-line"><span class="line-progress"></span></div>
+      <div class="route-grid">
+        <button class="route-stop active" data-stop="checkin"><span class="stop-number">01</span><span class="stop-icon">▣</span><strong>Check-in</strong><small>A label gives the bag its destination.</small></button>
+        <button class="route-stop" data-stop="screening"><span class="stop-number">02</span><span class="stop-icon">⌁</span><strong>Screening</strong><small>Security checks the contents.</small></button>
+        <button class="route-stop" data-stop="sorting"><span class="stop-number">03</span><span class="stop-icon">⑂</span><strong>Sorting</strong><small>Belts and sorters find the flight.</small></button>
+        <button class="route-stop" data-stop="makeup"><span class="stop-number">04</span><span class="stop-icon">▰</span><strong>Make-up</strong><small>Bags gather near the aircraft.</small></button>
+        <button class="route-stop" data-stop="loading"><span class="stop-number">05</span><span class="stop-icon">↗</span><strong>Loading</strong><small>Containers or carts go airside.</small></button>
+        <button class="route-stop" data-stop="reclaim"><span class="stop-number">06</span><span class="stop-icon">◎</span><strong>Reclaim</strong><small>The carousel completes the loop.</small></button>
+      </div>
+      <div class="route-detail" aria-live="polite"><div><p class="eyebrow"><span class="eyebrow-line"></span> Current stop <span id="stop-number">01</span> / 06</p><h3 id="stop-title">Check-in</h3></div><p id="stop-description">The airline prints a bag tag with a unique identifier and routing information. The tag helps the system know where this bag needs to go.</p><span class="route-note" id="stop-note">The barcode is the bag’s travel passport.</span></div>
+    </section>
+
+    <section class="systems-section" id="systems">
+      <div class="section-shell">
+        <div class="section-heading light-heading"><div><p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> The system behind the scene</p><h2>Logic, motion,<br><em>coordination.</em></h2></div><p class="section-note">A BHS combines physical infrastructure with data. Every scan is a small confirmation that the physical bag and its digital record still agree.</p></div>
+        <div class="systems-layout"><div class="system-map"><div class="map-node node-tag">TAG</div><div class="map-node node-scan">SCAN</div><div class="map-node node-sort">SORT</div><div class="map-node node-flight">FLIGHT</div><div class="map-core">BHS<br><b>↗</b></div><svg viewBox="0 0 500 360" aria-hidden="true"><path d="M100 95L250 180L395 85M250 180L390 275M250 180L100 280" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 8"/></svg></div><div class="system-copy"><div class="system-row"><span>01</span><div><h3>Identity</h3><p>The tag links a physical bag to a passenger, flight, and destination.</p></div></div><div class="system-row"><span>02</span><div><h3>Routing</h3><p>Scans and control software direct bags along the correct conveyor path.</p></div></div><div class="system-row"><span>03</span><div><h3>Timing</h3><p>Make-up areas and ramp teams align the bag’s arrival with the aircraft’s departure.</p></div></div></div></div>
+      </div>
+    </section>
+
+    <section class="handoff section-shell" id="handoff"><div class="handoff-intro"><p class="eyebrow"><span class="eyebrow-line"></span> The final moment</p><h2>Goodbye,<br><em>then hello.</em></h2><p>At the destination, the direction reverses. Bags leave the aircraft, enter the arrivals system, and travel to the carousel where a passenger can take over again.</p></div><div class="handoff-list"><div><span>01</span><h3>Unload</h3><p>Ramp teams move bags from the aircraft to the arrivals route.</p></div><div><span>02</span><h3>Deliver</h3><p>A belt or carousel presents bags in a shared public space.</p></div><div><span>03</span><h3>Reunite</h3><p>The journey ends when the right person recognizes the right bag.</p></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="section-shell footer-inner"><a class="brand" href="#top"><span class="brand-mark">▱</span><span>BAG<br><b>/ ROUTE</b></span></a><p>A small object in a large system.<br><span>Baggage journey / 2026</span></p><a class="back-top" href="#top">Back to top <span>↑</span></a></div></footer>
+</body>
+</html>
