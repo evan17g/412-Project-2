@@ -232,3 +232,12 @@ You should run these commands by starting at the project root directory.
     ```bash
     docker compose up -d
     ```
+
+All 10 services are now running via Docker Compose!
+The 5 copies of the inital static site can be accessed from ports 8081-8085.
+The 5 unique sites can be accessed from ports 8086-8090.
+To shut these services back down, run the following command:
+
+```bash
+docker compose down
+```
