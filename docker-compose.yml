@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  site1-copy1:
+    image: site1-nginx-container
+    ports:
+      - "8081:80"
+
+  site1-copy2:
+    image: site1-nginx-container
+    ports:
+      - "8082:80"
+
+  site1-copy3:
+    image: site1-nginx-container
+    ports:
+      - "8083:80"
+
+  site1-copy4:
+    image: site1-nginx-container
+    ports:
+      - "8084:80"
+
+  site1-copy5:
+    image: site1-nginx-container
+    ports:
+      - "8085:80"
+ 
+  site2:
+    image: site1-nginx-container
+    ports:
+      - "8086:80"
+    volumes:
+      - ./static-site-2:/usr/share/nginx/html:ro
+
+  site3:
+    image: site1-nginx-container
+    ports:
+      - "8087:80"
+    volumes:
+      - ./static-site-3:/usr/share/nginx/html:ro
+
+  site4:
+    image: site1-nginx-container
+    ports:
+      - "8088:80"
+    volumes:
+      - ./static-site-4:/usr/share/nginx/html:ro
+
+  site5:
+    image: site1-nginx-container
+    ports:
+      - "8089:80"
+    volumes:
+      - ./static-site-5:/usr/share/nginx/html:ro
+
+  site6:
+    image: site1-nginx-container
+    ports:
+      - "8090:80"
+    volumes:
+      - ./static-site-6:/usr/share/nginx/html:ro
